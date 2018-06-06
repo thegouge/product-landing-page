@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Try our product!</title>
+    <title>Cat Shaped Post-it Notes!</title>
 
     <link rel="stylesheet" href="master.css">
 </head>
 
 <body>
-    <header id="header">
+    <header class="bookend" id="header">
         <h2 id="rep">
             <img src="images/logo.jpg" alt="Company Logo" id="header-img"> Cat Industries | Post-its
         </h2>
@@ -31,9 +31,36 @@
     </header>
     <main>
 
+        <section id="hero">
+            <h3 class="section-header">Cat Industries is back with an incredible new product!</h3>
 
+            <div class="product-list">
+                <img class="product-img" src="images/image1.jpg" alt="Product Photo 1">
+                <p class="img-description">
+                    Cat ipsum dolor sit amet, claws in your leg or run outside as soon as door open but hide when guests come over or walk on
+                    car leaving trail of paw prints on hood and windshield.
+                </p>
+            </div>
 
-        <div id="about">
+            <div class="product-list" id="alt">
+                <img class="product-img" src="images/image2.jpg" alt="Product Photo 2">
+                <p class="img-description">
+                    Cat ipsum dolor sit amet, claws in your leg or run outside as soon as door open but hide when guests come over or walk on
+                    car leaving trail of paw prints on hood and windshield.
+                </p>
+            </div>
+
+            <div class="product-list">
+                <img class="product-img" src="images/image3.jpg" alt="Product Photo 3">
+                <p class="img-description">
+                    Cat ipsum dolor sit amet, claws in your leg or run outside as soon as door open but hide when guests come over or walk on
+                    car leaving trail of paw prints on hood and windshield.
+                </p>
+            </div>
+        </section>
+
+        <section id="about">
+            <h4 class="sub-header">A Little About Us</h4>
             <p>
                 Cat is love, cat is life. Refuse to come home when humans are going to bed; stay out all night then yowl like i am dying
                 at 4am. Instead of drinking water from the cat bowl, make sure to steal water from the toilet missing until
@@ -48,19 +75,45 @@
                 to be let out, but who's the baby, yet scream at teh bath or refuse to come home when humans are going to
                 bed; stay out all night then yowl like i am dying at 4am.
             </p>
-        </div>
+        </section>
 
-        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/rjKwOptnS6Q?rel=0" frameborder="0" allow="autoplay; encrypted-media"
-            allowfullscreen></iframe>
+        <section id="multimedia">
+            <div id="video-container">
+                <h4 class="sub-header">Let's Take a Look at One of Our Satisfied Customers!</h4>
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/rjKwOptnS6Q?rel=0" frameborder="0" allow="autoplay; encrypted-media"
+                    allowfullscreen></iframe>
+            </div>
 
-        <form action="https://www.freecodecamp.com/email-submit" id="form">
-            <label for="email">Sign up for our Newsletter!</label>
-            <input type="email" id="email" name="email" placeholder="john.johnson@johnjohnson.com">
+            <div id="form-container">
+                <h4 class="sub-header">Sign Up for Our Newsletter!</h4>
+                <form action="https://www.freecodecamp.com/email-submit" id="form">
 
-            <input id="submit" type="submit">
-        </form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="John Johnson" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="john.johnson@johnjohnson.com">
+
+                    <label for="cat">What Kind of Cat is Your Favorite?</label>
+                    <input type="text" id="cat" placeholder="John's Cat Breed">
+
+                    <br>
+
+                    <input id="submit" type="submit">
+                </form>
+            </div>
+
+        </section>
     </main>
+
+    <footer class="bookend">
+        <p>
+            None of these images, logos, or patterns are mine, they belong to their respective owners this project was made for the Free
+            Code Camp Certificate project "Create a Product Landing Page"
+        </p>
+    </footer>
     <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
 </body>
+
 
 </html>

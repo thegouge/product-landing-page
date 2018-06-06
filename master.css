@@ -8,15 +8,18 @@ body {
   clear: both;
 }
 
-#header {
+.bookend {
   background: rgb(46, 46, 46);
   color: white;
+}
+
+#header {
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   display: flex;
   justify-content: space-between;
-  width: 100%;
 }
 
 #rep {
@@ -59,27 +62,115 @@ main {
   text-align: center;
 }
 
+#hero {
+  background: lightgreen;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 50px;
+  border-radius: 10px;
+}
+
+.section-header {
+  font-size: 40px;
+}
+
+.product-list {
+  display: flex;
+  padding: 30px;
+}
+
+#alt {
+  flex-direction: row-reverse;
+  background: rgba(146, 146, 146, 0.274);
+}
+
+#alt.img-description {
+  text-align: right;
+}
+
+.product-img {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 10px;
+}
+
+.img-description {
+  vertical-align: middle;
+  text-align: left;
+  margin: auto;
+  width: 400px;
+  padding: 50px 5px 50px 5px;
+}
+
 #about {
   background: white;
   border: 1px solid grey;
+  border-radius: 10px;
+  padding: 20px 50px;
+  margin-bottom: 50px;
 }
 
-form {
+.sub-header {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#multimedia {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 100px;
+}
+
+#video-container {
+  background: lightblue;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#form-container {
+  background: lightblue;
+  padding: 10px 30px 30px 30px;
+  text-align: center;
+  width: fit-content;
+  border-radius: 10px;
+}
+
+#form {
   background: white;
   border: 1px solid silver;
-  width: 20%;
-  padding: 20px;
+  width: 100%;
   border-radius: 5px;
-  display: inline-block;
+  display: block;
+  margin-left: -15px;
+  padding: 15px;
 }
 
 label {
   display: block;
   margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+input[type="submit"] {
+  margin-top: 20px;
+}
+
+footer {
+  padding: 50px;
+  margin: 0;
 }
 
 @media (max-width: 1000px) {
   #header {
     flex-direction: column;
+  }
+  #multimedia {
+    flex-direction: column;
+  }
+  #form-container {
+    margin: 40px auto 0 auto;
   }
 }
